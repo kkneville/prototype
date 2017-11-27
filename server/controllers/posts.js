@@ -3,7 +3,8 @@ var Post = require('../models/post');
 
 module.exports = {
   	index: function(req, res) {
-    	return res.render('posts/index');	
+  		console.log("inside of index")
+    	return res.render('index');	
 	}
 
 

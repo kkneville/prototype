@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <title>Bootstrap Theme The Band</title>
+  
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../../css/index.css">
+
+  <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if 
+  });
+})
+</script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">k[n]</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myCarousel">HOME</a></li>
+        <li><a href="#intro">ABOUT</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li> 
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>	
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="/img/grey.jpg" alt="New York">
+      <div class="carousel-caption text-vertical-center">
+        <h1>katherine k. neville</h1>
+        <h2>developer at large</h2>
+      </div> 
+    </div>
+
+    <div class="item">
+      <img src="/img/pier2.jpg" alt="Chicago">
+      <div class="carousel-caption text-vertical-center">
+        <h1>full stack development</h1>
+        <h2>from wireframe to deployment</h2>
+      </div> 
+    </div>
+
+    <div class="item">
+      <img src="/img/field.jpg" alt="Los Angeles">
+      <div class="carousel-caption text-vertical-center">
+        <h1>versatility</h1>
+        <h2>something catchy here</h2>
+      </div> 
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<div  id="intro" class="container text-center">
+<h1 id="name">katherine k. neville </h1>
+
+	<h3>A creative, problem-solving team-player </h3> 
+	<h4> with a passion for developing powerful, intuitive web apps. </h4>
+	<br>
+
+	<p><img class="icon" src="./img/circle.jpg"></p>
+	
+	<h3>My 3-month intensive bootcamp</h3> 
+	<h4> builds on 6 years working in healthcare start ups.</h4>
+	<br>
+
+	<p><img class="icon" src="./img/circle.jpg"></p>
+
+	<h3>As a full stack developer,</h3>
+	<h4> I have the skills to develop working web solutions from wireframe to deployment.</h4>
+	<br>
+
+	<p><img class="icon" src="./img/circle.jpg"></p>
+
+	<h3> I build in python, ruby, and javascript,</h3> 
+	<h4> and can quickly pick up new languages and technologies.</h4>
+
+
+</div>
+
+    <aside class="callout">
+      <div class="text-vertical-center">
+        <h1>portfolio</h1>
+      </div>
+    </aside>
+
+<div  id="portfolio" class="container text-center">
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="#demo" data-toggle="collapse">
+      	<img src="/img/giftsnip.jpg" class="img-circle person" alt="project image">
+      </a>
+	    <div id="demo" class="collapse">
+	      <h3>Wish List</h3>		
+	      <p>A Secret Santa app for office and home. Built with: </p>
+	      <p>
+	      	<img class="icon" src="./img/ruby.png">
+		    <img class="icon" src="./img/rails.png"> 
+			<img class="icon" src="./img/postgres.png">
+			<img src="./img/ubuntu.png" class="icon">
+			<img src="./img/vagrant2.png" class="icon"> 
+		  </p>
+		  <p>		
+			<img src="./img/html5.png" class="icon">
+			<img src="./img/css-logo.svg" class="icon">
+			<img src="./img/js.png" class="icon">
+			<img src="./img/bootstrap.png" class="icon">
+			<img src="./img/aws.jpg" class="icon">
+		  </p>
+		</div>
+
+    </div>
+    <div class="col-sm-4">
+      <a href="#demo2" data-toggle="collapse">
+      	<img src="/img/labsnip2.jpg" class="img-circle person" alt="project image">
+      </a>
+    <div id="demo2" class="collapse">
+      <h3>Sample Tracker</h3>		
+      <p>An app designed for diagnostic laboratory providers. Built with:</p>
+      <p>	
+      	<img src="./img/python2.png" class="icon">
+		<img class="icon" src="./img/django2.png">
+		<img src="./img/sqlite.jpg" class="icon">
+	  </p>
+	  <p>			
+		<img src="./img/html5.png" class="icon">
+		<img src="./img/css-logo.svg" class="icon">
+		<img src="./img/js.png" class="icon">
+		<img src="./img/aws.jpg" class="icon">
+	  </p>
+    </div>
+    </div>
+
+      <div class="col-sm-4">
+      <a href="#demo3" data-toggle="collapse">
+      	<img src="/img/mastermindsnip.jpg" class="img-circle person" alt="project image">
+      </a>
+    <div id="demo3" class="collapse">
+      <h3>Mastermind</h3>
+      <p>Play the well-loved boardgame against your browser - an entirely javascript browser app. Built with:</p>
+      <p>
+      	<img src="./img/html5.png" class="icon">
+		<img src="./img/css-logo.svg" class="icon">
+		<img src="./img/js.png" class="icon">
+      </p>	
+    </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-4">
+      <a href="#demo4" data-toggle="collapse">
+      	<img src="/img/food2.jpg" class="img-circle person" alt="project image">
+      </a>
+	    <div id="demo4" class="collapse">
+	      <h3>Fork It</h3>
+	      <p>Current WIP: A meal planner and grocery assistant app integrating a recipe API. Built with:</p>
+	      <p>
+	      	<img class="icon" src="./img/ruby.png">
+			<img class="icon" src="./img/rails.png"> 
+			<img class="icon" src="./img/postgres.png">
+			<img src="./img/ubuntu.png" class="icon">
+			<img src="./img/vagrant2.png" class="icon"> 
+		  </p>
+		  <p>	
+			<img src="./img/html5.png" class="icon">
+			<img src="./img/css-logo.svg" class="icon">
+			<img src="./img/js.png" class="icon">
+			<img src="./img/bootstrap.png" class="icon">
+			<img src="./img/aws.jpg" class="icon">
+	      </p>
+	    </div>
+
+    </div>
+    <div class="col-sm-4">
+      <a href="#demo5" data-toggle="collapse">
+      	<img src="/img/echo.png" class="img-circle person" alt="project image">
+      </a>
+    <div id="demo5" class="collapse">
+      <h3>Animal Trivia</h3>
+      <p>Current WIP: An Alexa skill that dispenses trivia about animals. Just say: "Alexa, tell me something interesting about animals?" Built with: </p>
+      <p>	
+      		<img src="./img/python2.png" class="icon">
+			<img src="./img/alexa.png" class="icon">
+			<img src="./img/aws.jpg" class="icon">
+	</p>
+    </div>
+    </div>
+
+      <div class="col-sm-4">
+      <a href="#demo6" data-toggle="collapse">
+      	<img src="/img/cruise.jpg" class="img-circle person" alt="project image">
+      </a>
+    <div id="demo6" class="collapse">
+      <h3>Silent Auction</h3>
+      <p>Current WIP: A simple silent auction app for school or charity fundraising. Built with:</p>
+      <p>
+	    <img src="./img/mongo2.png" class="icon">
+		<img src="./img/node2.jpg" class="icon">
+		<img src="./img/node.png" class="icon">
+		<img src="./img/angular.png" class="icon">
+		<img src="./img/html5.png" class="icon">
+	  </p>
+	  <p>	
+		<img src="./img/css-logo.svg" class="icon">
+		<img src="./img/js.png" class="icon">
+		<img src="./img/ts.png" class="icon">
+		<img src="./img/aws.jpg" class="icon">	
+
+      </p>
+    </div>
+    </div>
+
+
+  </div>
+
+
+
+</div>
+
+
+    <aside class="callout">
+      <div class="text-vertical-center">
+        <h1>contact</h1>
+      </div>
+    </aside>
+
+
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>We love our fans!</em></p>
+  <div class="row test">
+    <div class="col-md-4">
+      <p>Fan? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Dallas, TX</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> contact@kkneville.com</p> 
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Questions or Comments" rows="5"></textarea>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <p> <button class="btn pull-right" type="submit">Send</button></p>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+
+
+
+
+<footer class="text-center">
+  <a class="up-arrow" href="#myCarousel" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Bootstrap Theme Adapted from <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">W3Schools</a></p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip(); 
+})
+</script>
+
+
+</body>
+</html> 
