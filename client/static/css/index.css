@@ -17,6 +17,7 @@ body {
     border-color: #f1f1f1;
 }
 
+
 .carousel-inner img {
     -webkit-filter: grayscale(90%);
     filter: grayscale(90%); /* make all photos black and white */ 
@@ -25,8 +26,9 @@ body {
     height: 100px;
 }
 
-.carousel-caption h2, h1 {
-    color: #f7b28f !important;
+.carousel-caption h1, h2 {
+    color: #f7b28f;
+    font-size: 20px;
 }
 
 @media (max-width: 600px) {
@@ -34,6 +36,15 @@ body {
         display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
 }
+
+
+.jumbotron {
+  background-color: grey;
+  margin-bottom: 0px;
+  height: 50px;
+  padding: 0px;
+}
+
 
 /* Add a dark background color with a little bit see-through */ 
 .navbar {
@@ -86,7 +97,7 @@ footer a:hover {
   display: table;
   width: 100%;
   height: 200px;
-  color: #f7b28f;
+  color: #f28e60;
   background: url(../img/field.jpg) no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
