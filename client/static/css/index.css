@@ -131,3 +131,11 @@ footer a:hover {
 #name {
   font-size: 36px;
 }
+
+div.title {
+    display: none;
+}
+
+a.wrapper:hover .title {
+    display: inline-block;
+}
